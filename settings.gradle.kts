@@ -1,3 +1,3 @@
-
-rootProject.name = "DSU"
+include(":DSU")
+rootProject.name = "Algorithms"
 
