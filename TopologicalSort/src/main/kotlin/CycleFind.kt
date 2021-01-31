@@ -58,8 +58,6 @@ private fun bfsFindCycle(graph: Map<Int, List<Int>>): Boolean {
         }
     }
 
-    if (queue.isEmpty()) return true
-
     while (queue.isNotEmpty()) {
         val currentNode = queue.poll()
         visited[currentNode] = true
