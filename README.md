@@ -6,3 +6,6 @@
 - BFS and DFS in graphs
 - Merge Sort and Quick Sort
 - Binary Search Variations
+- Single Source shortest path
+    - Dijkstra's
+    - Bellman-Ford 
