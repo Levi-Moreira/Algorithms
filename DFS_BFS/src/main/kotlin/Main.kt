@@ -1,10 +1,4 @@
-package main.kotlin
-
 import java.util.*
-
-fun main() {
-
-}
 
 fun bfs(node: Int, graph: Map<Int, List<Int>>, N: Int) {
     val visited = BooleanArray(N) { false }

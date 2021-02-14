@@ -11,7 +11,7 @@ class TopologicalSort {
  * Graphs need to be acyclic
  */
 fun topSort(graph: Map<Int, List<Int>>): List<Int> {
-    if (findCycle(graph)) return emptyList()
+    if (findCycleDfs(graph)) return emptyList()
 
     val numberOfNodes = graph.keys.size
     val visited = BooleanArray(numberOfNodes)
