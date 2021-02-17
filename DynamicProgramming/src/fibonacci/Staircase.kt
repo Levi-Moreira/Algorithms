@@ -19,7 +19,7 @@ fun stairCaseWithRecursionAndMemo(n: Int): Int {
     return helper(n, cache)
 }
 
-fun helper(n: Int, cache: IntArray): Int {
+private fun helper(n: Int, cache: IntArray): Int {
     if (cache[n] != -1) return cache[n]
     cache[n] = helper(n - 1, cache) + helper(n - 2, cache) + helper(n - 3, cache)
     return cache[n]
