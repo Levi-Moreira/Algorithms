@@ -7,7 +7,7 @@ fun coinChangeWithRecurssion(coins: IntArray, amount: Int): Int {
     return helper(0, coins, amount)
 }
 
-fun helper(index: Int, coins: IntArray, amount: Int): Int {
+private fun helper(index: Int, coins: IntArray, amount: Int): Int {
     if (amount == 0) return 1
     if (index > coins.lastIndex || amount < 0) return 0
 
@@ -25,7 +25,7 @@ fun coinChangeWithRecurssionAndMemo(coins: IntArray, amount: Int): Int {
     return helper(0, coins, amount, cache)
 }
 
-fun helper(index: Int, coins: IntArray, amount: Int, cache: Array<IntArray>): Int {
+private fun helper(index: Int, coins: IntArray, amount: Int, cache: Array<IntArray>): Int {
     if (amount == 0) return 1
 
     if (index > coins.lastIndex || amount < 0) return 0
