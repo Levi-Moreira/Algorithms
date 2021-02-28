@@ -46,7 +46,6 @@ class AVL {
     fun showTreeElements() {
         inorder(root)
     }
-
     private fun inorder(node: BSTNode?) {
         if (node == null) return
 
