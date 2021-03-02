@@ -1,4 +1,4 @@
-data class BSTNode(val value: Int, var left: BSTNode? = null, var right: BSTNode? = null, var height: Int = 1) {
+data class BSTNode(var value: Int, var left: BSTNode? = null, var right: BSTNode? = null, var height: Int = 1) {
 
     fun balance(): Int {
         val left = left?.height ?: 0
