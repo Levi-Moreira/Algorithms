@@ -1,4 +1,4 @@
-fun lis(arr: IntArray): Int {
+fun longestIncreasingSub(arr: IntArray): Int {
     val dp = IntArray(arr.size) { 1 }
 
     for (i in 1..arr.lastIndex) {
