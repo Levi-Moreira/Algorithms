@@ -36,6 +36,23 @@ private fun dfs(
     return false
 }
 
+private fun dfsUndirected(
+    currentNode: Int,
+    visited: BooleanArray,
+    graph: Map<Int, List<Int>>,
+    parent: Int
+): Boolean {
+    visited[currentNode] = true
+
+    for (nextNode in graph[currentNode] ?: listOf()) {
+        if (!visited[nextNode]) {
+            if (dfsUndirected(nextNode, visited, graph, currentNode)) return true
+        } else {
+            if (nextNode != parent) return true
+        }
+    }
+    return false
+}
 
 /**
  * O(V + E)
